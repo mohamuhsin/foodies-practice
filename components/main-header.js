@@ -1,13 +1,12 @@
 import logoImg from "@/assets/logo.png";
-import Link from "next/link";
 import Image from "next/image";
 
 import classes from "./main-header.module.css";
-
+import NavLink from "@/components/nav-link";
 export default function MainHeader() {
     return (
         <header className={classes.header}>
-            <Link href="/" className={classes.logo}>
+            <NavLink href="/" className={classes.logo}>
                 <Image
                     src={logoImg.src}
                     alt="foodies logo"
@@ -16,14 +15,14 @@ export default function MainHeader() {
                     priority
                 />
                 NextLevel Food
-            </Link>
+            </NavLink>
             <nav className={classes.nav}>
                 <ul>
                     <li>
-                        <Link href="/meals">Browse Meals</Link>
+                        <NavLink href="/meals">Browse Meals</NavLink>
                     </li>
                     <li>
-                        <Link href="/community">Foodies Community</Link>
+                        <NavLink href="/community">Foodies Community</NavLink>
                     </li>
                 </ul>
             </nav>
