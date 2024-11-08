@@ -3,19 +3,20 @@ import Image from "next/image";
 
 import classes from "./main-header.module.css";
 import NavLink from "@/components/nav-link";
+import Link from "next/link";
 export default function MainHeader() {
     return (
         <header className={classes.header}>
-            <NavLink href="/" className={classes.logo}>
+            <Link href="/" className={classes.logo}>
                 <Image
-                    src={logoImg.src}
+                    src={logoImg}
                     alt="foodies logo"
                     width="1024"
                     height="1024"
                     priority
                 />
                 NextLevel Food
-            </NavLink>
+            </Link>
             <nav className={classes.nav}>
                 <ul>
                     <li>
