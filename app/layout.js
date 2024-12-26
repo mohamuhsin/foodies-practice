@@ -2,6 +2,8 @@ import MainHeader from "@/components/main-header";
 import "./globals.css";
 import MainHeaderBackground from "@/components/main-header-background";
 
+import { quicksand } from "./fonts/fonts";
+
 export const metadata = {
   title: "NextLevel Food",
   description: "Delicious meals, shared by a food-loving community.",
@@ -9,9 +11,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={quicksand.className}>
       <body>
-        <MainHeaderBackground/>
+        <MainHeaderBackground />
         <MainHeader />
         {children}
       </body>
