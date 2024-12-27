@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 
-html {
+/* html {
   font-family: 'Quicksand', sans-serif;
-}
+} */
 
 body {
   margin: 0;
@@ -31,7 +31,7 @@ body {
   -webkit-text-fill-color: transparent;
   background-size: cover;
   background-position: center;
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
 }
 
 .not-found p,
